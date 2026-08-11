@@ -1,4 +1,4 @@
-const SCRIPT_URL = "URL_GOOGLE_APPS_SCRIPT_ANDA";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzx00jc42MO3_px5nkhmOvFmTUP-gwvB8DHLi99oV5n7b95aWCjftWuiQQZv6fB42LaAA/exec";
 
 const form = document.getElementById("registrationForm");
 const submitButton = document.getElementById("submitButton");
@@ -135,7 +135,7 @@ async function submitRegistration(event) {
   event.preventDefault();
   hideAlert();
 
-  if (SCRIPT_URL === "URL_GOOGLE_APPS_SCRIPT_ANDA") {
+  if (SCRIPT_URL === "https://script.google.com/macros/s/AKfycbzx00jc42MO3_px5nkhmOvFmTUP-gwvB8DHLi99oV5n7b95aWCjftWuiQQZv6fB42LaAA/exec") {
     showAlert("error", "Silakan isi variabel SCRIPT_URL di file script.js dengan URL Web App Google Apps Script Anda.");
     statusText.textContent = "Konfigurasi SCRIPT_URL belum diisi.";
     return;
